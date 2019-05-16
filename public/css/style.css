@@ -1,5 +1,10 @@
 body {
-	margin-top: 100px;
+	padding-top: 100px;
+    background: url(https://i.imgur.com/Q3VU1lN.gif);
+    color: #fff;
+    font-family: "VT323";
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
 }
 
 .image {
@@ -11,6 +16,15 @@ body {
 
 .image img {
     max-width: 100%;
+}
+
+#submit {
+	text-transform: uppercase;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #ff2ca1;
+	border-color: #ff2ca1;
 }
 
 @media (min-width: 992px) { 
