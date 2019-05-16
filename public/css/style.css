@@ -2,6 +2,17 @@ body {
 	margin-top: 100px;
 }
 
+.image {
+    width: 100px;
+    float: right;
+    position: relative;
+    margin-top: -50px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
 @media (min-width: 992px) { 
 	.container {
 		width: 50%;
