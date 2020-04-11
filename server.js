@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const setupRoutes = require("./routes/routes.js");
 
 // set up express
 const app = express();
@@ -18,7 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // routes
-require("./routes/routes.js")(app);
+setupRoutes(app);
 
 // sync sequelize models and start express
 db.sequelize.sync({ force: true }).then(() => {
